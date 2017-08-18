@@ -3,7 +3,7 @@
 class DumperApp extends hxd.App {
 
     override function init () : Void {
-        var hmd = hxd.Res.Model.toHmd ();
+        var hmd = hxd.Res.skel.toHmd ();
         var dump = new hxd.fmt.hmd.Dump ();
         var data = hmd.header;
         data.data = hmd.getData ();
